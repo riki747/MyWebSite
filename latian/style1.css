@@ -1,0 +1,105 @@
+/* Media query untuk tampilan mobile */
+@media (max-width: 768px) {
+    /* Mengatur ulang margin dan padding di seluruh elemen */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  
+    /* Header */
+    header {
+      padding: 10px;
+      text-align: center;
+      font-size: 1.2em; /* Perkecil ukuran teks header */
+    }
+  
+    /* Menu Navigasi */
+    ul {
+      flex-direction: column; /* Ubah menjadi kolom agar rapi di mobile */
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+  
+    /* Home Content */
+    .home-content {
+      margin-top: 20px;
+      margin-left: 0;
+      grid-template-columns: 1fr; /* Satu kolom di layar kecil */
+      grid-template-areas:
+        "header"
+        "image"
+        "text"
+        "button";
+      padding-bottom: 20px;
+    }
+  
+    .home-content h2 {
+      padding-top: 20px;
+      text-align: center;
+    }
+  
+    .home-content p {
+      margin-top: 10px;
+      text-align: center;
+    }
+  
+    /* Image dan Zoom Effect */
+    .image {
+      padding-left: 0;
+      margin: 20px auto;
+      text-align: center;
+    }
+    .zoom {
+      width: 60vw; /* Sesuaikan ukuran gambar di layar kecil */
+      transform: translateX(0);
+    }
+  
+    /* Tombol */
+    .button {
+      font-size: 14px;
+      padding: 10px;
+      margin: 10px auto; /* Pusatkan tombol di mobile */
+    }
+  
+    /* Tabel */
+    table {
+      width: 90%; /* Perbesar lebar tabel */
+      margin: 20px auto; /* Tengah di layar kecil */
+    }
+    th, td {
+      font-size: 16px; /* Sesuaikan ukuran teks */
+      padding: 10px;
+    }
+  
+    /* Produk */
+    .classproduk {
+      flex-direction: column; /* Ubah menjadi kolom di mobile */
+      gap: 10px;
+      padding: 10px;
+    }
+  
+    /* Gambar Produk */
+    .classImage {
+      width: 90%; /* Lebih lebar untuk layar kecil */
+      margin: 10px auto;
+    }
+  
+    /* Footer */
+    footer {
+      text-align: center;
+      margin: 10px;
+      padding: 10px;
+    }
+  
+    /* Kontak */
+    .contact {
+      flex-direction: column; /* Agar ikon kontak berurutan di mobile */
+      gap: 5px;
+      padding: 10px;
+    }
+  }
+  
